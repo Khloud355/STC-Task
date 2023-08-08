@@ -1,0 +1,28 @@
+<span *ngIf="!products" class="loader"></span>
+<div class="top-content">
+  <label for="id">Select Category To Show</label>
+  <ng-select
+  [items]="allCategories"
+  bindLabel="name"
+  bindValue="id"
+  placeholder="Select Category"
+  (change)="onSubmit(selectedCategory)"
+  [(ngModel)]="selectedCategory"
+>
+</ng-select>
+</div>
+
+<div class="user-view" *ngIf="products">
+  <div class="category">
+    <ng-container>
+      <div class="more">
+        <h1 class="main-title">{{ selectedCategory }}</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-3" *ngFor="let product of products">
+          <app-product-cart [productData]="product"></app-product-cart>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

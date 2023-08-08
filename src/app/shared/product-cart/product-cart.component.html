@@ -1,0 +1,22 @@
+<div class="card-data">
+  <a [routerLink]="['/item', productData.id]"  >
+    <div class="image">
+      <img [src]="productData.image" alt="" />
+    </div>
+    <div class="content">
+      <h5 class="title" [matTooltip]="productData.title" aria-label="edit item">
+        {{ productData.title }}
+      </h5>
+      <p class="des" [matTooltip]="productData.description" aria-label="edit item">
+        {{ productData.description }}
+      </p>
+      <div class="details">
+        <span class="price">{{ productData.price }} <span class="currency">EGP</span>
+        </span>
+        <div class="rating">
+          <ngb-rating class="rating" [(rate)]="productData.rating.rate" [max]="5" ></ngb-rating>
+        </div>
+      </div>
+    </div>
+  </a>
+  </div>

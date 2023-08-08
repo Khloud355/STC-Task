@@ -1,0 +1,22 @@
+
+nav{
+  background: cornflowerblue;
+  padding: 0.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  .logo{
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .btns{
+    display: flex;
+    gap: 5px;
+  .add-btnn{
+    margin-top: 0rem;
+    padding: .5rem 1rem;
+  }
+}
+}
