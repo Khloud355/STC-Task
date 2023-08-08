@@ -1,0 +1,47 @@
+.modal-body{
+  background: #fff;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 1px solid #ccc;
+  padding: 1rem 0rem;
+  border-radius: 5px;
+  h3{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    font-weight: 600;
+    color: cornflowerblue;
+  }
+.form-data{
+  display: flex;
+  justify-content: center;
+  .modal-footer{
+    margin-top: 2rem;
+    gap: 11px;
+  }
+  form{
+    width: 80%;
+  .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+
+    label{
+      // font-weight: 600;
+      // color: cornflowerblue;
+    }
+    input,textarea{
+
+      margin-top: .5rem;
+      border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    }
+  }
+}
+}
+
+}
